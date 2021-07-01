@@ -9,7 +9,7 @@
 
    <!-- Omitting baseFont will use a system-appropriate monospaced. -->
    <!--<baseFont family="..." size="13"/>-->
-    <baseFont size="12"/>
+    <baseFont size="18"/>
    
    <!--  General editor colors. -->
    <background color="ffffff"/>
