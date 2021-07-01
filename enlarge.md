@@ -46,6 +46,10 @@ SET swing.defaultlaf=C:\Users\rmcquear\laf.xml
 
 
 
+UIManager.put("Label.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 18)));
+UIManager.put("Button.font", new FontUIResource(new Font("Dialog", Font.BOLD, 18)));
+UIManager.put("TextField.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 18)));
+
 
 
 ```
