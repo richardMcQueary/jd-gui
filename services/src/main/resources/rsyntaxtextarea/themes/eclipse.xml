@@ -7,11 +7,11 @@
 -->
 <RSyntaxTheme version="1.0">
 
-   <!-- Omitting baseFont will use a system-appropriate monospaced. -->
+   <!-- OMITTING baseFont WILL USE SYSTEM-APPROPRIATE MONOSPACE -->
    <!--<baseFont family="..." size="13"/>-->
     <baseFont size="18"/>
    
-   <!--  General editor colors. -->
+   <!-- GENERAL EDITOR COLORS -->
    <background color="ffffff"/>
    <caret color="000000"/>
    <selection bg="default" fg="default"/>
@@ -27,13 +27,13 @@
       <language index="3" bg="ffe0f0"/>
    </secondaryLanguages>
    
-   <!-- Gutter styling. -->
+   <!-- GUTTER STYLING -->
    <gutterBorder color="dddddd"/>
    <lineNumbers fg="787878"/>
    <foldIndicator fg="808080" iconBg="ffffff"/>
    <iconRowHeader activeLineRange="3399ff"/>
    
-   <!-- Syntax tokens. -->
+   <!-- SYNTAX TOKENS -->
    <tokenStyles>
       <style token="IDENTIFIER" fg="000000"/>
       <style token="RESERVED_WORD" fg="7f0055" bold="true"/>
