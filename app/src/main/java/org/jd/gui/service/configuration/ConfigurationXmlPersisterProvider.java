@@ -12,6 +12,8 @@ import org.jd.gui.model.configuration.Configuration;
 import org.jd.gui.service.platform.PlatformService;
 import org.jd.gui.util.exception.ExceptionUtil;
 
+import java.awt.Font;
+import javax.swing.plaf.FontUIResource;
 import javax.swing.*;
 import javax.xml.stream.*;
 import java.awt.*;
