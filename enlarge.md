@@ -1,8 +1,10 @@
 ```
 
 
+git clone https://github.com/richardMcQueary/jd-gui.git C:\Users\rmcquear\jd-gui2
 
-git clone https://github.com/java-decompiler/jd-gui.git
+
+# git clone https://github.com/java-decompiler/jd-gui.git
 SET swing.defaultlaf=C:\Users\rmcquear\lafbacking.xml
 cd jd-gui
 .\gradlew build
