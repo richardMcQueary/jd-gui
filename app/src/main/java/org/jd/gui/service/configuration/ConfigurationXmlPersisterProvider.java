@@ -21,6 +21,7 @@ import java.util.*;
 import java.util.List;
 import java.util.jar.Manifest;
 
+
 public class ConfigurationXmlPersisterProvider implements ConfigurationPersister {
     protected static final String ERROR_BACKGROUND_COLOR = "JdGuiPreferences.errorBackgroundColor";
     protected static final String JD_CORE_VERSION = "JdGuiPreferences.jdCoreVersion";
@@ -65,6 +66,7 @@ public class ConfigurationXmlPersisterProvider implements ConfigurationPersister
         return new File(Constants.CONFIG_FILENAME);
     }
 
+    
     @Override
     public Configuration load() {
         // Default values
@@ -84,6 +86,13 @@ public class ConfigurationXmlPersisterProvider implements ConfigurationPersister
 
         config.setLookAndFeel((defaultLaf != null) ? defaultLaf : UIManager.getSystemLookAndFeelClassName());
 
+        /*  
+         *  ENLARGE FONTS IN MENUS
+         */
+        UIManager.put("Label.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 18)));
+        UIManager.put("Button.font", new FontUIResource(new Font("Dialog", Font.BOLD, 18)));
+        UIManager.put("TextField.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 18)));
+        
         File recentSaveDirectory = new File(System.getProperty("user.dir"));
 
         config.setRecentLoadDirectory(recentSaveDirectory);
@@ -175,7 +184,7 @@ public class ConfigurationXmlPersisterProvider implements ConfigurationPersister
             }
         }
 
-        if (! config.getPreferences().containsKey(ERROR_BACKGROUND_COLOR)) {
+        if (!config.getPreferences().containsKey(ERROR_BACKGROUND_COLOR)) {
             config.getPreferences().put(ERROR_BACKGROUND_COLOR, "0xFF6666");
         }
 
