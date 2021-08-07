@@ -2,7 +2,7 @@
 
 
 rm -rf .\jd-gui2
-git clone https://github.com/richardMcQueary/jd-gui.git C:\Users\rmcquear\jd-gui2
+git clone https://github.com/richardMcQueary/jd-gui.git .\jd-gui2
 cd .\jd-gui2
 .\gradlew build
 
