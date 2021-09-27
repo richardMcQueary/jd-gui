@@ -129,7 +129,11 @@ public class ConfigurationXmlPersisterProvider implements ConfigurationPersister
         UIManager.put("ToolTip.background", Color.BLACK);
         UIManager.put("ToolTip.foreground", Color.MAGENTA);        
         UIManager.put("TabbedPane.background", Color.BLACK);
-        UIManager.put("TabbedPane.foreground", Color.MAGENTA);          
+        UIManager.put("TabbedPane.foreground", Color.MAGENTA);   
+        
+        UIManager.put("Separator.foreground", Color.MAGENTA); 
+        UIManager.put("ScrollBar.background", Color.BLACK);
+        UIManager.put("ScrollBar.foreground", Color.MAGENTA);           
                       
         /*
 Button.background
