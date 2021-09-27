@@ -17,7 +17,8 @@
     <foreground color="#FFFFFF" />
    -->
    <!--  General editor colors. -->
-   <background color="293134"/>	
+   <!-- <background color="293134"/> -->	
+   <background color="040405"/>	
    <caret color="c1cbc2"/>
    <selection useFG="false" bg="404E51" roundedEdges="false"/>
    <currentLineHighlight color="2F393C" fade="false"/>
