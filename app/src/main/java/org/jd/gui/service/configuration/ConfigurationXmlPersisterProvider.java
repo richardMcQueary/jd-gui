@@ -98,15 +98,15 @@ public class ConfigurationXmlPersisterProvider implements ConfigurationPersister
         /*
          *  DARK MODE
          */
-        //UIManager.put("Label.background", Color.BLACK);
-        //UIManager.put("Label.foreground", Color.MAGENTA);
-        UIManager.put("Button.background", Color.BLACK);
-        UIManager.put("Button.foreground", Color.MAGENTA);        
-        UIManager.put("TextField.background", Color.BLACK);
-        UIManager.put("TextField.foreground", Color.MAGENTA);        
-        UIManager.put("Menu.background", Color.BLACK);
-        UIManager.put("Menu.foreground", Color.MAGENTA);            
-        UIManager.put("Tree.background", Color.BLACK);
+        //UIManager.put("Label.background", Color.MAGENTA);
+        //UIManager.put("Label.foreground", Color.WHITE);
+        UIManager.put("Button.background", Color.MAGENTA);
+        UIManager.put("Button.foreground", Color.WHITE);        
+        UIManager.put("TextField.background", Color.MAGENTA);
+        UIManager.put("TextField.foreground", Color.WHITE);        
+        UIManager.put("Menu.background", Color.MAGENTA);
+        UIManager.put("Menu.foreground", Color.WHITE);            
+        UIManager.put("Tree.background", Color.MAGENTA);
         UIManager.put("Tree.foreground", Color.WHITE);            
         /*
         UIManager.put( "control", new Color( 128, 128, 128) );
