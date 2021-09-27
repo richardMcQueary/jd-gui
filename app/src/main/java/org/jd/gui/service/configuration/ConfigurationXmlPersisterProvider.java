@@ -98,6 +98,10 @@ public class ConfigurationXmlPersisterProvider implements ConfigurationPersister
         /*
          *  DARK MODE
          */
+        UIManager.put("Label.background", Color.BLACK);
+        UIManager.put("Label.foreground", Color.WHITE);
+        
+        /*
         UIManager.put( "control", new Color( 128, 128, 128) );
         UIManager.put( "info", new Color(128,128,128) );
         UIManager.put( "nimbusBase", new Color( 18, 30, 49) );
@@ -112,7 +116,8 @@ public class ConfigurationXmlPersisterProvider implements ConfigurationPersister
         UIManager.put( "nimbusSelectedText", new Color( 255, 255, 255) );
         UIManager.put( "nimbusSelectionBackground", new Color( 104, 93, 156) );
         UIManager.put( "text", new Color( 230, 230, 230) );
-        
+        */
+            
         
         File recentSaveDirectory = new File(System.getProperty("user.dir"));
 
