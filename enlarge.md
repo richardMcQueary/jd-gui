@@ -7,6 +7,27 @@ cd .\jd-gui2
 .\gradlew build
 
 
+
+#-----------------------------------------------------------------------------------------------
+
+
+
+
+
+# jd-gui/services/src/main/resources/rsyntaxtextarea/themes/eclipse.xml 
+<baseFont size="18"/>
+
+
+# jd-gui/app/src/main/java/org/jd/gui/service/configuration/ConfigurationXmlPersisterProvider.java
+
+UIManager.put("Label.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 18)));
+UIManager.put("Button.font", new FontUIResource(new Font("Dialog", Font.BOLD, 18)));
+UIManager.put("TextField.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 18)));
+
+
+#-----------------------------------------------------------------------------------------------
+
+
 # git clone https://github.com/java-decompiler/jd-gui.git
 SET swing.defaultlaf=C:\Users\rmcquear\lafbacking.xml
 cd jd-gui
