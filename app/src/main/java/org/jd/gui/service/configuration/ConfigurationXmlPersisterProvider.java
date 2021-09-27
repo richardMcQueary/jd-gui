@@ -106,6 +106,8 @@ public class ConfigurationXmlPersisterProvider implements ConfigurationPersister
         UIManager.put("TextField.foreground", Color.MAGENTA);        
         UIManager.put("Menu.background", Color.BLACK);
         UIManager.put("Menu.foreground", Color.MAGENTA);            
+        UIManager.put("Tree.background", Color.BLACK);
+        UIManager.put("Tree.foreground", Color.MAGENTA);            
         /*
         UIManager.put( "control", new Color( 128, 128, 128) );
         UIManager.put( "info", new Color(128,128,128) );
