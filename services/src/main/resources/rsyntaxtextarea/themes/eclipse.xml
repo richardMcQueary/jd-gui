@@ -17,6 +17,7 @@
     <foreground color="#FFFFFF" />
    -->
    <!--  General editor colors. -->
+   <!-- HEX CODES -->	
    <!-- <background color="293134"/> -->	
    <background color="040405"/>	
    <caret color="c1cbc2"/>
