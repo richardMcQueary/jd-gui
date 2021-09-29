@@ -99,7 +99,7 @@ public class ConfigurationXmlPersisterProvider implements ConfigurationPersister
          *  DARK MODE
          */
         UIManager.put("Label.background", Color.BLACK);
-        UIManager.put("Label.foreground", Color.MAGENTA);
+        UIManager.put("Label.foreground", Color.BLACK);
         UIManager.put("Button.background", Color.BLACK);
         UIManager.put("Button.foreground", Color.MAGENTA);        
         UIManager.put("TextField.background", Color.BLACK);
