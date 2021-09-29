@@ -91,7 +91,7 @@ public class ConfigurationXmlPersisterProvider implements ConfigurationPersister
         /*  
          *  ENLARGE FONTS IN MENUS
          */
-        //UIManager.put("Label.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 18)));
+        UIManager.put("Label.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 18)));
         UIManager.put("Button.font", new FontUIResource(new Font("Dialog", Font.BOLD, 18)));
         UIManager.put("TextField.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 18)));
         
@@ -113,6 +113,7 @@ public class ConfigurationXmlPersisterProvider implements ConfigurationPersister
         
         UIManager.put("Desktop.background", Color.BLACK);
         UIManager.put("InternalFrame.background", Color.BLACK);
+        UIManager.put("InternalFrame.borderColor", Color.BLACK);        
         UIManager.put("MenuBar.background", Color.BLACK);
         UIManager.put("MenuBar.foreground", Color.MAGENTA);
         UIManager.put("MenuItem.background", Color.BLACK);
