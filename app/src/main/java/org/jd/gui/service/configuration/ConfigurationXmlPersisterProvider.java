@@ -621,7 +621,7 @@ windowText
             for (Map.Entry<String, String> preference : configuration.getPreferences().entrySet()) {
                 writer.writeCharacters("\n\t\t");
                 writer.writeStartElement(preference.getKey());
-                    writer.writeCharacters(preference.getValue());
+                writer.writeCharacters(preference.getValue());
                 writer.writeEndElement();
             }
 
