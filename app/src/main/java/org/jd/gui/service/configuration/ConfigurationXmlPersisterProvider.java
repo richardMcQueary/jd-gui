@@ -91,17 +91,17 @@ public class ConfigurationXmlPersisterProvider implements ConfigurationPersister
         /*  
          *  ENLARGE FONTS IN MENUS
          */
-        /*
+        
         int fontSizePackageTree = 24;
         UIManager.put("Label.font", new FontUIResource(new Font("Dialog", Font.PLAIN, fontSizePackageTree)));
         UIManager.put("Button.font", new FontUIResource(new Font("Dialog", Font.BOLD, fontSizePackageTree)));
         UIManager.put("TextField.font", new FontUIResource(new Font("Dialog", Font.PLAIN, fontSizePackageTree)));
-        */
+        setAllUIFonts(new javax.swing.plaf.FontUIResource("Serif", Font.PLAIN, fontSizePackageTree));
             
         /*
          *  DARK MODE
          */
-        /*
+        
         UIManager.put("Label.background", Color.BLACK);
         UIManager.put("Label.foreground", Color.BLACK);
         UIManager.put("Button.background", Color.BLACK);
@@ -153,7 +153,7 @@ public class ConfigurationXmlPersisterProvider implements ConfigurationPersister
         UIManager.put("menu", Color.BLACK);  
         UIManager.put("desktop", Color.BLACK);          
         UIManager.put("control", Color.BLACK);
-        */
+        
         
         /*
 Button.background
@@ -636,4 +636,16 @@ windowText
             assert ExceptionUtil.printStackTrace(e);
         }
     }
+    
+    
+   public static void setAllUIFonts(javax.swing.plaf.FontUIResource f){
+    java.util.Enumeration keys = UIManager.getDefaults().keys();
+    while (keys.hasMoreElements()) {
+      Object key = keys.nextElement();
+      Object value = UIManager.get (key);
+      if (value instanceof javax.swing.plaf.FontUIResource)
+        UIManager.put(key, f);
+      }
+    } 
+  }  
 }
