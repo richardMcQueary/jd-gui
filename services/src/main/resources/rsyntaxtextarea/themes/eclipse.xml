@@ -9,7 +9,7 @@
 
    <!-- Omitting baseFont will use a system-appropriate monospaced. -->
    <!--<baseFont family="..." size="13"/>-->
-   <baseFont size="36"/>
+   <baseFont size="64"/>
   
    <!--
     <background color="#191919" />
