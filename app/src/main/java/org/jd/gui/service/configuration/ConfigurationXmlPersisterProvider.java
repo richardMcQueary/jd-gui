@@ -565,28 +565,28 @@ windowText
 
             writer.writeStartElement("gui");
             writer.writeCharacters("\n\t\t");
-                writer.writeStartElement("mainWindow");
-                writer.writeCharacters("\n\t\t\t");
-                    writer.writeStartElement("location");
-                        writer.writeAttribute("x", String.valueOf(l.x));
-                        writer.writeAttribute("y", String.valueOf(l.y));
-                    writer.writeEndElement();
-                    writer.writeCharacters("\n\t\t\t");
-                    writer.writeStartElement("size");
-                        writer.writeAttribute("w", String.valueOf(s.width));
-                        writer.writeAttribute("h", String.valueOf(s.height));
-                    writer.writeEndElement();
-                    writer.writeCharacters("\n\t\t\t");
-                    writer.writeStartElement("maximize");
-                        writer.writeCharacters(String.valueOf(configuration.isMainWindowMaximize()));
-                    writer.writeEndElement();
-                    writer.writeCharacters("\n\t\t");
-                writer.writeEndElement();
-                writer.writeCharacters("\n\t\t");
-                writer.writeStartElement("lookAndFeel");
-                    writer.writeCharacters(configuration.getLookAndFeel());
-                writer.writeEndElement();
-                writer.writeCharacters("\n\t");
+            writer.writeStartElement("mainWindow");
+            writer.writeCharacters("\n\t\t\t");
+            writer.writeStartElement("location");
+            writer.writeAttribute("x", String.valueOf(l.x));
+            writer.writeAttribute("y", String.valueOf(l.y));
+            writer.writeEndElement();
+            writer.writeCharacters("\n\t\t\t");
+            writer.writeStartElement("size");
+            writer.writeAttribute("w", String.valueOf(s.width));
+            writer.writeAttribute("h", String.valueOf(s.height));
+            writer.writeEndElement();
+            writer.writeCharacters("\n\t\t\t");
+            writer.writeStartElement("maximize");
+            writer.writeCharacters(String.valueOf(configuration.isMainWindowMaximize()));
+            writer.writeEndElement();
+            writer.writeCharacters("\n\t\t");
+            writer.writeEndElement();
+            writer.writeCharacters("\n\t\t");
+            writer.writeStartElement("lookAndFeel");
+            writer.writeCharacters(configuration.getLookAndFeel());
+            writer.writeEndElement();
+            writer.writeCharacters("\n\t");
             writer.writeEndElement();
             writer.writeCharacters("\n\t");
 
@@ -595,7 +595,7 @@ windowText
             for (File recentFile : configuration.getRecentFiles()) {
                 writer.writeCharacters("\n\t\t");
                 writer.writeStartElement("filePath");
-                    writer.writeCharacters(recentFile.getAbsolutePath());
+                writer.writeCharacters(recentFile.getAbsolutePath());
                 writer.writeEndElement();
             }
 
@@ -605,14 +605,14 @@ windowText
 
             writer.writeStartElement("recentDirectories");
             writer.writeCharacters("\n\t\t");
-                writer.writeStartElement("loadPath");
-                    writer.writeCharacters(configuration.getRecentLoadDirectory().getAbsolutePath());
-                writer.writeEndElement();
-                writer.writeCharacters("\n\t\t");
-                writer.writeStartElement("savePath");
-                    writer.writeCharacters(configuration.getRecentSaveDirectory().getAbsolutePath());
-                writer.writeEndElement();
-                writer.writeCharacters("\n\t");
+            writer.writeStartElement("loadPath");
+            writer.writeCharacters(configuration.getRecentLoadDirectory().getAbsolutePath());
+            writer.writeEndElement();
+            writer.writeCharacters("\n\t\t");
+            writer.writeStartElement("savePath");
+            writer.writeCharacters(configuration.getRecentSaveDirectory().getAbsolutePath());
+            writer.writeEndElement();
+            writer.writeCharacters("\n\t");
             writer.writeEndElement();
             writer.writeCharacters("\n\t");
 
@@ -642,7 +642,7 @@ windowText
     java.util.Enumeration keys = UIManager.getDefaults().keys();
     while (keys.hasMoreElements()) {
       Object key = keys.nextElement();
-      Object value = UIManager.get (key);
+      Object value = UIManager.get(key);
       if (value instanceof javax.swing.plaf.FontUIResource) {
         UIManager.put(key, f);
       }
