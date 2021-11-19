@@ -92,7 +92,7 @@ public class ConfigurationXmlPersisterProvider implements ConfigurationPersister
          *  ENLARGE FONTS IN MENUS
          */
         
-        int fontSizePackageTree = 24;
+        int fontSizePackageTree = 36;
         UIManager.put("Label.font", new FontUIResource(new Font("Dialog", Font.PLAIN, fontSizePackageTree)));
         UIManager.put("Button.font", new FontUIResource(new Font("Dialog", Font.BOLD, fontSizePackageTree)));
         UIManager.put("TextField.font", new FontUIResource(new Font("Dialog", Font.PLAIN, fontSizePackageTree)));
